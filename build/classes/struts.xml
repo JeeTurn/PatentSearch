@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+	<constant name="struts.action.extension" value="do,action,,"></constant>
+
+    <package name="default" namespace="/" extends="struts-default">
+    
+    
+    
+    
+    
+          
+    	
+    
+    
+    
+    
+    
+    
+    
+    
+        <action name="*_*" class="action.{1}" method="{2}">
+            <result>{1}_{2}.jsp</result>
+            <result name="index">index.jsp</result>
+            <result name="ShowPatent">showpatent.jsp</result>
+            <result name="ToIndex">index.jsp</result>
+            <result name="ListPatent">listpatent.jsp</result>
+            
+        </action>
+        
+        
+      
+        
+        
+        
+    </package>
+      
+</struts>
